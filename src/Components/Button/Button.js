@@ -1,11 +1,16 @@
 import React from 'react'
+import './Button.css'
 
-const Button = () => {
+import {Button} from '@material-ui/core'
+const Botton = ({text,icon}) => {
     return (
         <div>
-            <button>hire me </button>
+            <Button className='site-btn' endIcon={
+                icon ?(<div className='btn-icon-container'>{icon}</div>):null
+                }><span className="btn-text">{text}</span>
+                 </Button>
         </div>
     )
 }
 
-export default Button
+export default Botton

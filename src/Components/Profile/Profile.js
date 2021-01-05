@@ -1,6 +1,6 @@
 import { Typography } from '@material-ui/core'
 import React from 'react'
-import Button from "../Button/Button.js"
+import Botton from "../Button/Button.js"
 import a from "../../assets/images/me.jpg"
 import "./Profile.css"
 import {TimelineContent ,TimelineItem} from '@material-ui/lab';
@@ -8,7 +8,7 @@ import CustomTimeLine ,{Tmseperator} from "../TimeLine/TimeLine"
 import resumedata from "../../utils/ResumeData"
 import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
 
-
+import GetAppIcon from '@material-ui/icons/GetApp';
 const Constumelineitem =({title,text,link })=>{
     return(
 <TimelineItem>
@@ -52,7 +52,7 @@ const Profile = () => {
 
                        <br/>
                        </div>
-                       <Button/>
+                       <Botton text={"Download cv"} icon={<GetAppIcon/>}/>
            
         </div>
     )
