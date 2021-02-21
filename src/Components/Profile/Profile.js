@@ -52,8 +52,9 @@ const Profile = () => {
 
                        <br/>
                        </div>
-                       <Botton text={"Download cv"} icon={<GetAppIcon/>}/>
-           
+                       <div className="btn-container">
+                       <Botton  text={"Download cv"} icon={<GetAppIcon/>}/>
+                       </div>
         </div>
     )
 }
