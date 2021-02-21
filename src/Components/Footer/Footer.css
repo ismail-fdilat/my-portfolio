@@ -1,0 +1,27 @@
+.footer {
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+  border-radius: 8px;
+  padding: 20px 25px;
+}
+.footer-name {
+  font-size: 25px !important;
+
+  color: var(--main-color);
+}
+.footer a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+.footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+.footer-right {
+  color: #9c9c9c;
+}
