@@ -1,15 +1,8 @@
 import React from "react";
 import "./Header.css";
-import {
-  FormControl,
-  Form,
-  NavDropdown,
-  Button,
-  Navbar,
-  Nav
-} from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link, NavLink, withRouter } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 import { HomeRounded, Telegram } from "@material-ui/icons";
 import ResumeData from "../../utils/ResumeData";
 import Botton from "../Button/Button.js";
@@ -48,7 +41,11 @@ const Header = props => {
         </Nav>
         <div className="header-rightside ml-4">
           {Object.keys(ResumeData.socials).map(key => (
-            <a href={ResumeData.socials[key].link} target="_blank">
+            <a
+              href={ResumeData.socials[key].link}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               {ResumeData.socials[key].icon}
             </a>
           ))}

@@ -8,7 +8,7 @@ const Footer = () => {
         <Typography className="footer-name">Ismail. </Typography>
       </div>
       <div className="footer-right">
-        <Typography classname="footer-copyright">
+        <Typography className="footer-copyright">
           Designed and developped by <a href="/">Ismail fdilat</a>
         </Typography>
       </div>
